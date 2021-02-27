@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  align-items: center;
+  font-family: 'Rajdhani';
+  font-weight: 600;
+  color: var(--title);
+}
+
+.container>div {
+  flex: 1;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: var(--background);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  font-size: 8.5rem;
+  text-align: center;
+}
+
+.container>div span:first-child {
+  border-right: 1px solid var(--dark-line);
+}
+
+.container>div span:last-child {
+  border-left: 1px solid var(--dark-line);
+}
+
+.container>div span {
+  flex: 1;
+}
+
+.container>span {
+  font-size: 6.25rem;
+  margin: 0 0.5rem;
+}
+
+.buttonCountdown {
+  width: 100%;
+  height: 5rem;
+  margin-top: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-radius: 5px;
+  background-color: var(--purple);
+
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  transition: background-color 0.2s;
+}
+
+.buttonCountdown:disabled {
+  background-color: var(--white);
+  color: var(--text-dark);
+  cursor: not-allowed;
+}
+
+
+.buttonCountdown:not(:disabled):hover {
+  background-color: var(--purple-dark);
+  color: var(--white);
+}
+
+.buttonCountdownActive {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.buttonCountdownActive:not(:disabled):hover {
+  background-color: var(--red);
+  color: var(--white);
+}
