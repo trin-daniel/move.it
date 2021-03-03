@@ -16,4 +16,4 @@ Pessoas que trabalham todos os dias em frente ao computador quase sempre se esqu
 
 ## Preview
 
-!['Foto do aplicativo funcionando']('./public/preview.png')
+![Foto do aplicativo](./public/preview.png)
